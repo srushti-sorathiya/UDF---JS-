@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function sub(a, b) {
+        return a - b;
+    }
+
+    function multi(a, b) {
+        return a * b;
+    }
+
+    function divi(a, b) {
+        if (b === 0) {
+            return "Division by zero is not allowed.";
+        }
+        return a / b;
+    }
+
+    var num1 = parseFloat(prompt("Enter the first number:"));
+    var num2 = parseFloat(prompt("Enter the second number:"));
+
+    // Perform operations
+    var add = add(num1, num2);
+    var sub = sub(num1, num2);
+    var multi = multi(num1, num2);
+    var divi = divi(num1, num2);
+
+    // Display the results
+    document.write("<h1>Result is:- </h1>");
+    document.write(" Addition :- " + add + "<br>");
+    document.write(" Subtraction :- " + sub + "<br>");
+    document.write(" Multiplication :- " + multi + "<br>");
+    document.write(" Division :- " + divi + "<br>");
+
+</script>

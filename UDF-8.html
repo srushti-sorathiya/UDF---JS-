@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+    function swap1() {
+        // var a = 10;
+        var a = parseInt(prompt("Enter value of A :"));
+        return a;
+    }
+    function swap2() {
+        // var b = 20;
+        var b = parseInt(prompt("Enter value of B :"));
+        return b;
+    }
+    var d = swap1();
+    var c = swap2();
+
+    function swapping(d, c) {
+        var f;
+        f = d;
+        d = c;
+        c = f;
+        return document.write("<h1>Ans of A :- " + d + "</br>" + "Ans of B :- " + c + "</h1>");
+    }
+
+    var result = swapping(d, c);
+
+</script>
